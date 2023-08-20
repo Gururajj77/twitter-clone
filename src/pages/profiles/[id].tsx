@@ -40,7 +40,7 @@ const ProfilePage: NextPage<
       });
     },
   });
-  if (profile == null || profile.name == null)
+  if (profile == null || profile?.name == null)
     return <ErrorPage statusCode={404} />;
 
   return (
